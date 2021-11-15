@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first/my_container.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'package:flutter_first/my_flexible.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Quiz App',
       theme: ThemeData(primarySwatch: Colors.amber),
-      home: MyContainer(),
+      home: MyFlex(),
     );
   }
 }
