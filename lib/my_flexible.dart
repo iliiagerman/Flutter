@@ -31,6 +31,7 @@ class MyFlex extends StatelessWidget {
                 color: Colors.red[700],
               ),
               Expanded(child: Image.network('https://www.pinterest.ru/pin/146859637836505553/')),
+              
             ]),
         // child: Row(
         //   mainAxisAlignment: MainAxisAlignment.start,
