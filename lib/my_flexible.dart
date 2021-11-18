@@ -12,26 +12,27 @@ class MyFlex extends StatelessWidget {
         child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-             Container(
-               color: Colors.red[400],
+              Container(
+                color: Colors.red[400],
                 width: 50,
-             child: const Text(
-                'Dart',
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.black,
+                child: const Text(
+                  'Dart',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.black,
+                  ),
+                  softWrap: false,
+                  overflow: TextOverflow.fade,
                 ),
-               softWrap: false,
-               overflow: TextOverflow.fade,
-              ),
               ),
               Icon(
                 Icons.favorite,
                 size: 50,
                 color: Colors.red[700],
               ),
-              Expanded(child: Image.network('https://www.pinterest.ru/pin/146859637836505553/')),
-              
+              Expanded(
+                  child: Image.network(
+                      'https://www.pinterest.ru/pin/146859637836505553/')),
             ]),
         // child: Row(
         //   mainAxisAlignment: MainAxisAlignment.start,
