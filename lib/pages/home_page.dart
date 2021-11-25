@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_first/models/Question.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -6,6 +7,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage>{
+  final QuestionData data = Question();
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

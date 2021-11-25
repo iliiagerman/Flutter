@@ -7,11 +7,11 @@ class Question {
   Question({
     @required this.title,
     @required this.answers,
-  })
+  });
 }
 
 class QustionData{
-  final _data = [
+  // final _data = [
 
     List<Question> get questions => [..._data];
 }
