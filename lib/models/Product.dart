@@ -29,5 +29,13 @@ class ProductDataProvider with ChangeNotifier{
         imgUri: imgUri,
         color: '0xFFFFF59D',
     ),
+    Product(
+        id: 'p3',
+        title: 'Желтый взрыв счастья',
+        description: 'Ты получишь настоящее удовольствие, когда попробуешь',
+        price: 15.00,
+        imgUri: imgUri,
+        color: '0xFFFFF59D',
+    ),
   ]
 }
