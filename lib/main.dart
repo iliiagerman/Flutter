@@ -1,6 +1,9 @@
+import 'package:flutter_first/models/Card.dart';
 import 'package:flutter_first/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'models/Product.dart';
 
 
 void main() => runApp(MyApp());
@@ -11,7 +14,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MultiProvider(
+        providers: [
+          ChangeNotifierProvider<ProductDataProvider>(
+            create: (context) => ProductDataProvider(),
+          ),
+          ChangeNotifierProvider<CartDataProvider>(
+          create: (context) => CartDataProvider(),
+          ),
+        ],
+    child: MaterialApp(
       title: 'Demo App',
       theme: ThemeData(
           primarySwatch: Colors.amber,
@@ -21,6 +33,7 @@ class MyApp extends StatelessWidget {
          ),
       ),
       home: HomePage(),
+      ),
     );
   }
 }
