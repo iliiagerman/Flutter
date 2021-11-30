@@ -1,9 +1,9 @@
-import 'package:flutter_first/models/Card.dart';
+import 'package:flutter_first/models/Cart.dart';
 import 'package:flutter_first/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'models/Product.dart';
+import 'models/product.dart';
 
 
 void main() => runApp(MyApp());

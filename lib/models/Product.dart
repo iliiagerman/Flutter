@@ -20,9 +20,9 @@ class Product with ChangeNotifier{
   });
 }
 
-class ProductDataProvider with ChangeNotifier{
+class ProductDataProvider with ChangeNotifier {
 
-  List<Product> _items = [
+  final List<Product> _items = [
     Product(
         id: 'p3',
         title: 'Желтый взрыв счастья',
