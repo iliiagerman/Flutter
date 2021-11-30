@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_first/models/product.dart';
 import 'package:flutter_first/widgets/item_cart.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_first/widgets/catalog.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -58,9 +59,9 @@ class HomePage extends StatelessWidget {
                   child: Text('Каталог коктейлей')
               ),
 
-              Container(
-                child: Text('Список каталогов'),
-              ),
+             ...productData.items.map((value){
+               return CatalogListTile(imgUri: value.imgUri,);
+             }).toList(),
             ],
           ),
         ),
