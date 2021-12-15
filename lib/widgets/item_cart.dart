@@ -46,6 +46,7 @@ class ItemCard extends StatelessWidget {
                     child: Text(
                       '${product.title}',
                       style: TextStyle(
+
                           fontSize: 16, fontWeight: FontWeight.bold),
                     )),
               ],
